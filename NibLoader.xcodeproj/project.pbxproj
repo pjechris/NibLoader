@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49220E6A19C24E2800933867 /* libNibLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CA68219C1DBAA0050332D /* libNibLoader.a */; };
 		49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335A19C1DD9200342418 /* UIView+NibLoader.m */; };
 		49B1335F19C1E30000342418 /* NBLContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335E19C1E30000342418 /* NBLContainerView.m */; };
+		9D546D94F9384BEA8C715995 /* libPods-NibLoaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49220E6819C24E1F00933867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 497CA67A19C1DBAA0050332D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497CA68119C1DBAA0050332D;
+			remoteInfo = NibLoader;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		497CA68019C1DBAA0050332D /* CopyFiles */ = {
@@ -24,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0772A0DD7E8643DBB8D38C81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49541CD319C2531C00A1988C /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		497CA68219C1DBAA0050332D /* libNibLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNibLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		497CA68D19C1DBAA0050332D /* NibLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NibLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1335019C1DC0F00342418 /* NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibLoader.h; sourceTree = "<group>"; };
@@ -34,6 +48,8 @@
 		49B1335C19C1DDFA00342418 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		49B1335D19C1E30000342418 /* NBLContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBLContainerView.h; sourceTree = "<group>"; };
 		49B1335E19C1E30000342418 /* NBLContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBLContainerView.m; sourceTree = "<group>"; };
+		B742B8133F6046F59139C10C /* Pods-NibLoaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibLoaderTests.xcconfig"; path = "Pods/Pods-NibLoaderTests.xcconfig"; sourceTree = "<group>"; };
+		D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NibLoaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49220E6A19C24E2800933867 /* libNibLoader.a in Frameworks */,
+				9D546D94F9384BEA8C715995 /* libPods-NibLoaderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +79,8 @@
 				497CA68319C1DBAA0050332D /* Products */,
 				49B1334F19C1DC0F00342418 /* Src */,
 				49B1335319C1DC1600342418 /* Tests */,
+				909C3C3527C942AFAED5C795 /* Frameworks */,
+				B742B8133F6046F59139C10C /* Pods-NibLoaderTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				49B1335419C1DC1600342418 /* Info.plist */,
+				49541CD319C2531C00A1988C /* Prefix.pch */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -108,6 +129,15 @@
 				49B1335A19C1DD9200342418 /* UIView+NibLoader.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		909C3C3527C942AFAED5C795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0772A0DD7E8643DBB8D38C81 /* libPods.a */,
+				D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,13 +164,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497CA69619C1DBAA0050332D /* Build configuration list for PBXNativeTarget "NibLoaderTests" */;
 			buildPhases = (
+				FEC6E06482BD41AAA5105359 /* Check Pods Manifest.lock */,
 				497CA68919C1DBAA0050332D /* Sources */,
 				497CA68A19C1DBAA0050332D /* Frameworks */,
 				497CA68B19C1DBAA0050332D /* Resources */,
+				49290BBFFF7E45D5A3A2ED72 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				49220E6919C24E1F00933867 /* PBXTargetDependency */,
 			);
 			name = NibLoaderTests;
 			productName = NibLoaderTests;
@@ -192,6 +225,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49290BBFFF7E45D5A3A2ED72 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NibLoaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC6E06482BD41AAA5105359 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		497CA67E19C1DBAA0050332D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -210,6 +276,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49220E6919C24E1F00933867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497CA68119C1DBAA0050332D /* NibLoader */;
+			targetProxy = 49220E6819C24E1F00933867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		497CA69119C1DBAA0050332D /* Debug */ = {
@@ -291,7 +365,6 @@
 		497CA69419C1DBAA0050332D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -300,7 +373,6 @@
 		497CA69519C1DBAA0050332D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -308,6 +380,7 @@
 		};
 		497CA69719C1DBAA0050332D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B742B8133F6046F59139C10C /* Pods-NibLoaderTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -324,6 +397,7 @@
 		};
 		497CA69819C1DBAA0050332D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B742B8133F6046F59139C10C /* Pods-NibLoaderTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
