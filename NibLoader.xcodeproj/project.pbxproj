@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335A19C1DD9200342418 /* UIView+NibLoader.m */; };
+		49B1335F19C1E30000342418 /* NBLContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335E19C1E30000342418 /* NBLContainerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		49B1335919C1DD6500342418 /* UIView+NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoader.h"; sourceTree = "<group>"; };
 		49B1335A19C1DD9200342418 /* UIView+NibLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoader.m"; sourceTree = "<group>"; };
 		49B1335C19C1DDFA00342418 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		49B1335D19C1E30000342418 /* NBLContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBLContainerView.h; sourceTree = "<group>"; };
+		49B1335E19C1E30000342418 /* NBLContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBLContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				49B1335819C1DD2200342418 /* UIKit */,
 				49B1335019C1DC0F00342418 /* NibLoader.h */,
 				49B1335C19C1DDFA00342418 /* Prefix.pch */,
+				49B1335D19C1E30000342418 /* NBLContainerView.h */,
+				49B1335E19C1E30000342418 /* NBLContainerView.m */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */,
+				49B1335F19C1E30000342418 /* NBLContainerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
