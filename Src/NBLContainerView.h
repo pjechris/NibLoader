@@ -13,13 +13,22 @@
  * dynamically load decoupled xib components
  *
  * ContainerView work only with AutoLayout allowing it to:
- * - adapt contained view to the container dimensions when container has size constraints
- * - adapt container when contained view has size constraints
+ * - adapt content view to the container dimensions when container has size constraints
+ * - (TODO) adapt container when content view has size constraints
  *
- * Despite the fact that it inherit from UIView ContainerView can have **ONLY 1 subview**: the contained view
+ * Despite its inheritance from UIView ContainerView can have **ONLY 1 subview**: the content view
  */
 @interface NBLContainerView : UIView
 
 @property(nonatomic, weak)UIView  *contentView;
+
+/**
+ * Any call to this method set the view as the content view
+ *
+ * This is because ContainerView can have only one subview which is the contentView
+ *
+ * @param view the new content view
+ */
+- (void)addSubview:(UIView *)view;
 
 @end
