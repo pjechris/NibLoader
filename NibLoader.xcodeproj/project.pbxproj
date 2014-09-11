@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49220E6A19C24E2800933867 /* libNibLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CA68219C1DBAA0050332D /* libNibLoader.a */; };
+		49541CD519C2534100A1988C /* NBLContainerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49541CD419C2534100A1988C /* NBLContainerViewTests.m */; };
 		49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335A19C1DD9200342418 /* UIView+NibLoader.m */; };
 		49B1335F19C1E30000342418 /* NBLContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335E19C1E30000342418 /* NBLContainerView.m */; };
 		9D546D94F9384BEA8C715995 /* libPods-NibLoaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0772A0DD7E8643DBB8D38C81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		49541CD319C2531C00A1988C /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		49541CD419C2534100A1988C /* NBLContainerViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBLContainerViewTests.m; sourceTree = "<group>"; };
 		497CA68219C1DBAA0050332D /* libNibLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNibLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		497CA68D19C1DBAA0050332D /* NibLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NibLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1335019C1DC0F00342418 /* NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibLoader.h; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		49B1335319C1DC1600342418 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				49541CD419C2534100A1988C /* NBLContainerViewTests.m */,
 				49B1335419C1DC1600342418 /* Info.plist */,
 				49541CD319C2531C00A1988C /* Prefix.pch */,
 			);
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49541CD519C2534100A1988C /* NBLContainerViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
