@@ -1,0 +1,23 @@
+//
+//  config.xcconfig
+//
+//  Created by JC on 2/8/14.
+//  Copyright (c) 2014 KptainO. All rights reserved.
+//
+
+/// Set folder names for sources path
+TESTS_SRC_DIR = Tests
+APP_SRC_DIR = Src
+
+/// Generate Linking btw folders (Src/Tests) and targets (lib/framework/tests)
+xctest_TYPE = TESTS
+lib_TYPE = APP
+framework_TYPE = APP
+
+TARGET_TYPE = $($(EXECUTABLE_PREFIX)$(WRAPPER_EXTENSION)_TYPE)
+TARGET_SRC_PATH = $($(TARGET_TYPE)_SRC_DIR)
+
+/// Override PBX properties
+GCC_PREFIX_HEADER = $(TARGET_SRC_PATH)/Prefix.pch
+INFOPLIST_FILE = $(TARGET_SRC_PATH)/Info.plist
+

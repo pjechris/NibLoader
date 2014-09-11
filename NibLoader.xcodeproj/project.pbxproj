@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXCopyFilesBuildPhase section */
+		497CA68019C1DBAA0050332D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		497CA68219C1DBAA0050332D /* libNibLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNibLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		497CA68D19C1DBAA0050332D /* NibLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NibLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B1335019C1DC0F00342418 /* NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibLoader.h; sourceTree = "<group>"; };
+		49B1335419C1DC1600342418 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B1335719C1DC1C00342418 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		497CA67F19C1DBAA0050332D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497CA68A19C1DBAA0050332D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		497CA67919C1DBAA0050332D = {
+			isa = PBXGroup;
+			children = (
+				49B1335619C1DC1C00342418 /* Config */,
+				497CA68319C1DBAA0050332D /* Products */,
+				49B1334F19C1DC0F00342418 /* Src */,
+				49B1335319C1DC1600342418 /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		497CA68319C1DBAA0050332D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497CA68219C1DBAA0050332D /* libNibLoader.a */,
+				497CA68D19C1DBAA0050332D /* NibLoaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B1334F19C1DC0F00342418 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				49B1335019C1DC0F00342418 /* NibLoader.h */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		49B1335319C1DC1600342418 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49B1335419C1DC1600342418 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		49B1335619C1DC1C00342418 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				49B1335719C1DC1C00342418 /* config.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		497CA68119C1DBAA0050332D /* NibLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497CA69319C1DBAA0050332D /* Build configuration list for PBXNativeTarget "NibLoader" */;
+			buildPhases = (
+				497CA67E19C1DBAA0050332D /* Sources */,
+				497CA67F19C1DBAA0050332D /* Frameworks */,
+				497CA68019C1DBAA0050332D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NibLoader;
+			productName = NibLoader;
+			productReference = 497CA68219C1DBAA0050332D /* libNibLoader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		497CA68C19C1DBAA0050332D /* NibLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497CA69619C1DBAA0050332D /* Build configuration list for PBXNativeTarget "NibLoaderTests" */;
+			buildPhases = (
+				497CA68919C1DBAA0050332D /* Sources */,
+				497CA68A19C1DBAA0050332D /* Frameworks */,
+				497CA68B19C1DBAA0050332D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NibLoaderTests;
+			productName = NibLoaderTests;
+			productReference = 497CA68D19C1DBAA0050332D /* NibLoaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		497CA67A19C1DBAA0050332D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = fr.milkshake;
+				TargetAttributes = {
+					497CA68119C1DBAA0050332D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					497CA68C19C1DBAA0050332D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 497CA67D19C1DBAA0050332D /* Build configuration list for PBXProject "NibLoader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 497CA67919C1DBAA0050332D;
+			productRefGroup = 497CA68319C1DBAA0050332D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497CA68119C1DBAA0050332D /* NibLoader */,
+				497CA68C19C1DBAA0050332D /* NibLoaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		497CA68B19C1DBAA0050332D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		497CA67E19C1DBAA0050332D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497CA68919C1DBAA0050332D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		497CA69119C1DBAA0050332D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B1335719C1DC1C00342418 /* config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		497CA69219C1DBAA0050332D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B1335719C1DC1C00342418 /* config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497CA69419C1DBAA0050332D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		497CA69519C1DBAA0050332D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		497CA69719C1DBAA0050332D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		497CA69819C1DBAA0050332D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		497CA67D19C1DBAA0050332D /* Build configuration list for PBXProject "NibLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497CA69119C1DBAA0050332D /* Debug */,
+				497CA69219C1DBAA0050332D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497CA69319C1DBAA0050332D /* Build configuration list for PBXNativeTarget "NibLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497CA69419C1DBAA0050332D /* Debug */,
+				497CA69519C1DBAA0050332D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497CA69619C1DBAA0050332D /* Build configuration list for PBXNativeTarget "NibLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497CA69719C1DBAA0050332D /* Debug */,
+				497CA69819C1DBAA0050332D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 497CA67A19C1DBAA0050332D /* Project object */;
+}
