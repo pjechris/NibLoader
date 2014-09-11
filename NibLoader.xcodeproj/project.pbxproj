@@ -6,6 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335A19C1DD9200342418 /* UIView+NibLoader.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		497CA68019C1DBAA0050332D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,6 +28,9 @@
 		49B1335019C1DC0F00342418 /* NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibLoader.h; sourceTree = "<group>"; };
 		49B1335419C1DC1600342418 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B1335719C1DC1C00342418 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+		49B1335919C1DD6500342418 /* UIView+NibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoader.h"; sourceTree = "<group>"; };
+		49B1335A19C1DD9200342418 /* UIView+NibLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoader.m"; sourceTree = "<group>"; };
+		49B1335C19C1DDFA00342418 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +73,9 @@
 		49B1334F19C1DC0F00342418 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				49B1335819C1DD2200342418 /* UIKit */,
 				49B1335019C1DC0F00342418 /* NibLoader.h */,
+				49B1335C19C1DDFA00342418 /* Prefix.pch */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -85,6 +94,15 @@
 				49B1335719C1DC1C00342418 /* config.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		49B1335819C1DD2200342418 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				49B1335919C1DD6500342418 /* UIView+NibLoader.h */,
+				49B1335A19C1DD9200342418 /* UIView+NibLoader.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
