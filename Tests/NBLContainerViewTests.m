@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NBLContainerView.h"
+#import "UIView+NibLoader.h"
 
 SPEC_BEGIN(NBLContainerViewTests)
 
@@ -65,19 +66,15 @@ describe(@"with content", ^{
             [[newContentView.superview should] equal:containerView];
             [[containerView.contentView should] equal:newContentView];
         });
-    });
-    
-    context(@"when setting SAME content view", ^{
-        it(@"should do nothing", ^{
-            containerView.contentView = contentView;
-            
-            [[contentView.superview should] equal:containerView];
-        });
-        
-        it(@"should not remove view from container", ^{
-            [[contentView shouldNot] receive:@selector(removeFromSuperview)];
-            
-            containerView.contentView = contentView;
+
+        context(@"when setting SAME content view", ^{
+            it(@"should not remove view", ^{
+                [[contentView shouldNot] receive:@selector(removeFromSuperview)];
+
+                containerView.contentView = contentView;
+
+                [[contentView.superview should] equal:containerView];
+            });
         });
     });
     
@@ -96,17 +93,71 @@ describe(@"with content", ^{
     });
     
     context(@"when adding subview", ^{
-        
-    });
-    
-    context(@"when adding SAME content view", ^{
-        
+        __block UIView *newView;
+
+        beforeEach(^{
+            newView = [UIView new];
+        });
+
+        it(@"should replace content view", ^{
+            [containerView addSubview:newView];
+
+            [[containerView.contentView should] equal:newView];
+        });
+
+        context(@"when adding SAME content view", ^{
+            it(@"should not remove view", ^{
+                [[contentView shouldNot] receive:@selector(removeFromSuperview)];
+
+                [containerView addSubview:contentView];
+
+                [[containerView.contentView should] equal:contentView];
+            });
+        });
     });
     
     describe(@"auto-layout", ^{
-        describe(@"when container has constraints", ^{
+        __block UIView *rootView;
+
+        describe(@"when CONTAINER has constraints", ^{
+
+            beforeEach(^{
+                rootView = [UIView viewFromNib:[UINib nibWithNibName:@"ContainerSizedTests" bundle:[NSBundle bundleForClass:self.class]] owner:nil];
+                containerView = [rootView subviews][0];
+                contentView = containerView.contentView;
+                
+                [rootView layoutIfNeeded];
+            });
+
+            context(@"contentView", ^{
+                it(@"size should equal container size", ^{
+                    [[theValue(CGRectGetWidth(contentView.frame)) shouldNot] equal:theValue(0)];
+                    [[theValue(CGRectGetWidth(contentView.frame)) should] equal:theValue(CGRectGetWidth(containerView.frame))];
+                    [[theValue(CGRectGetHeight(contentView.frame)) should] equal:theValue(CGRectGetHeight(containerView.frame))];
+                });
+            });
+
             context(@"intrinsicContentSize", ^{
                 
+            });
+        });
+        
+        describe(@"when CONTENT has constraints", ^{
+            
+            beforeEach(^{
+                rootView = [UIView viewFromNib:[UINib nibWithNibName:@"ContentSizedTests" bundle:[NSBundle bundleForClass:self.class]] owner:nil];
+                containerView = [rootView subviews][0];
+                contentView = containerView.contentView;
+                
+                [rootView layoutIfNeeded];
+            });
+            
+            context(@"containerView", ^{
+                it(@"size should enclose content", ^{
+                    [[theValue(CGRectGetWidth(containerView.frame)) shouldNot] equal:theValue(0)];
+                    [[theValue(CGRectGetWidth(containerView.frame)) should] equal:theValue(CGRectGetWidth(contentView.frame))];
+                    [[theValue(CGRectGetHeight(containerView.frame)) should] equal:theValue(CGRectGetHeight(contentView.frame))];
+                });
             });
         });
     });

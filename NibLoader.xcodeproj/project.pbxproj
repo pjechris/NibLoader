@@ -11,6 +11,8 @@
 		49541CD519C2534100A1988C /* NBLContainerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49541CD419C2534100A1988C /* NBLContainerViewTests.m */; };
 		49B1335B19C1DD9200342418 /* UIView+NibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335A19C1DD9200342418 /* UIView+NibLoader.m */; };
 		49B1335F19C1E30000342418 /* NBLContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B1335E19C1E30000342418 /* NBLContainerView.m */; };
+		49E3532619C59B3D00B9D709 /* ContainerSizedTests.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E3532519C59B3D00B9D709 /* ContainerSizedTests.xib */; };
+		49E3532819C5E92300B9D709 /* ContentSizedTests.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E3532719C5E92300B9D709 /* ContentSizedTests.xib */; };
 		9D546D94F9384BEA8C715995 /* libPods-NibLoaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		49B1335C19C1DDFA00342418 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		49B1335D19C1E30000342418 /* NBLContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBLContainerView.h; sourceTree = "<group>"; };
 		49B1335E19C1E30000342418 /* NBLContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBLContainerView.m; sourceTree = "<group>"; };
+		49E3532519C59B3D00B9D709 /* ContainerSizedTests.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerSizedTests.xib; sourceTree = "<group>"; };
+		49E3532719C5E92300B9D709 /* ContentSizedTests.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentSizedTests.xib; sourceTree = "<group>"; };
 		B742B8133F6046F59139C10C /* Pods-NibLoaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibLoaderTests.xcconfig"; path = "Pods/Pods-NibLoaderTests.xcconfig"; sourceTree = "<group>"; };
 		D3648B06269146698A31BBD5 /* libPods-NibLoaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NibLoaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +117,8 @@
 				49541CD419C2534100A1988C /* NBLContainerViewTests.m */,
 				49B1335419C1DC1600342418 /* Info.plist */,
 				49541CD319C2531C00A1988C /* Prefix.pch */,
+				49E3532719C5E92300B9D709 /* ContentSizedTests.xib */,
+				49E3532519C59B3D00B9D709 /* ContainerSizedTests.xib */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E3532619C59B3D00B9D709 /* ContainerSizedTests.xib in Resources */,
+				49E3532819C5E92300B9D709 /* ContentSizedTests.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
