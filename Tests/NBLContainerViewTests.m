@@ -11,7 +11,7 @@
 #import "NBLContainerView.h"
 #import "UIView+NibLoader.h"
 
-SPEC_BEGIN(NBLContainerViewTests)
+SPEC_BEGIN(NBLContainerViewSpec)
 
 __block UIView *contentView;
 __block NBLContainerView *containerView;
