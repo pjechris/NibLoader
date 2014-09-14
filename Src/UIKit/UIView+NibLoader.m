@@ -24,7 +24,7 @@
     NSArray *rootViews = [nib instantiateWithOwner:owner options:nil];
 
     for (UIView *rootView in rootViews) {
-        if ([rootViews isKindOfClass:[self class]])
+        if ([rootView isKindOfClass:[self class]])
             return rootView;
     }
 
