@@ -117,30 +117,47 @@ describe(@"with content", ^{
     });
     
     describe(@"auto-layout", ^{
-        __block NSDictionary *bindings;
+        __block UIView *rootView;
 
-        beforeEach(^{
-            bindings = NSDictionaryOfVariableBindings(containerView, contentView);
-        });
-
-        describe(@"when container has constraints", ^{
-            __block UIView *rootView;
+        describe(@"when CONTAINER has constraints", ^{
 
             beforeEach(^{
-                rootView = [UIView viewFromNib:[UINib nibWithNibName:@"ViewTests" bundle:[NSBundle bundleForClass:self.class]] owner:nil];
+                rootView = [UIView viewFromNib:[UINib nibWithNibName:@"ContainerSizedTests" bundle:[NSBundle bundleForClass:self.class]] owner:nil];
                 containerView = [rootView subviews][0];
-                containerView.contentView = contentView;
+                contentView = containerView.contentView;
+                
+                [rootView layoutIfNeeded];
             });
 
-            context(@"contentView size", ^{
-                it(@"should equal container size", ^{
+            context(@"contentView", ^{
+                it(@"size should equal container size", ^{
                     [[theValue(CGRectGetWidth(contentView.frame)) shouldNot] equal:theValue(0)];
                     [[theValue(CGRectGetWidth(contentView.frame)) should] equal:theValue(CGRectGetWidth(containerView.frame))];
+                    [[theValue(CGRectGetHeight(contentView.frame)) should] equal:theValue(CGRectGetHeight(containerView.frame))];
                 });
             });
 
             context(@"intrinsicContentSize", ^{
                 
+            });
+        });
+        
+        describe(@"when CONTENT has constraints", ^{
+            
+            beforeEach(^{
+                rootView = [UIView viewFromNib:[UINib nibWithNibName:@"ContentSizedTests" bundle:[NSBundle bundleForClass:self.class]] owner:nil];
+                containerView = [rootView subviews][0];
+                contentView = containerView.contentView;
+                
+                [rootView layoutIfNeeded];
+            });
+            
+            context(@"containerView", ^{
+                it(@"size should enclose content", ^{
+                    [[theValue(CGRectGetWidth(containerView.frame)) shouldNot] equal:theValue(0)];
+                    [[theValue(CGRectGetWidth(containerView.frame)) should] equal:theValue(CGRectGetWidth(contentView.frame))];
+                    [[theValue(CGRectGetHeight(containerView.frame)) should] equal:theValue(CGRectGetHeight(contentView.frame))];
+                });
             });
         });
     });

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6206.8"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="362"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXG-GB-Ima" customClass="NBLContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="234" height="362"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-0I-JJf" userLabel="content view">
+                            <rect key="frame" x="20" y="40" width="194" height="282"/>
+                            <color key="backgroundColor" red="0.14801155348691553" green="1" blue="0.92815800425148764" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="194" id="JWM-rX-qIO"/>
+                                <constraint firstAttribute="height" constant="282" id="ieN-6q-9t5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.65172270697397661" blue="0.21396504287472862" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="N3z-0I-JJf" firstAttribute="leading" secondItem="ZXG-GB-Ima" secondAttribute="leading" constant="20" id="PWq-jM-gY8"/>
+                        <constraint firstAttribute="trailing" secondItem="N3z-0I-JJf" secondAttribute="trailing" constant="20" id="eW6-i5-6yl"/>
+                        <constraint firstItem="N3z-0I-JJf" firstAttribute="top" secondItem="ZXG-GB-Ima" secondAttribute="top" constant="40" id="lLU-Ua-asi"/>
+                        <constraint firstAttribute="bottom" secondItem="N3z-0I-JJf" secondAttribute="bottom" constant="40" id="vRk-Dm-TM8"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="PWq-jM-gY8"/>
+                            <exclude reference="eW6-i5-6yl"/>
+                            <exclude reference="lLU-Ua-asi"/>
+                            <exclude reference="vRk-Dm-TM8"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZXG-GB-Ima" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mKz-NW-tQM"/>
+                <constraint firstAttribute="bottom" secondItem="ZXG-GB-Ima" secondAttribute="bottom" id="o0D-Jc-ZMG"/>
+                <constraint firstItem="ZXG-GB-Ima" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wFX-P0-ytu"/>
+                <constraint firstAttribute="trailing" secondItem="ZXG-GB-Ima" secondAttribute="trailing" id="z9Z-kz-WJc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="o0D-Jc-ZMG"/>
+                    <exclude reference="z9Z-kz-WJc"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="17" y="95"/>
+        </view>
+    </objects>
+</document>
