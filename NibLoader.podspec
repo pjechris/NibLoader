@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name		= "NibLoader"
   s.version		= "0.0.1"
-  s.source		= { :git => "https://github.com/pjechris/#{s.name}.git"
+  s.source		= { :git => "https://github.com/pjechris/#{s.name}.git",
   		     	    :tag => s.version.to_s }
 
   s.summary          	= "Nested NIB/XIB with no pain"
