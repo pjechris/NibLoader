@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name		= "NibLoader"
-  s.version		= "0.0.1"
+  s.version		= "0.0.2"
   s.source		= { :git => "https://github.com/pjechris/#{s.name}.git",
   		     	    :tag => s.version.to_s }
 
