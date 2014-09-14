@@ -138,7 +138,9 @@ describe(@"with content", ^{
             });
 
             context(@"intrinsicContentSize", ^{
-                
+                it(@"should be 'nil'", ^{
+                    [[theValue([containerView intrinsicContentSize]) should] equal:theValue(CGSizeMake(UIViewNoIntrinsicMetric, UIViewNoIntrinsicMetric))];
+                });
             });
         });
         
@@ -157,6 +159,12 @@ describe(@"with content", ^{
                     [[theValue(CGRectGetWidth(containerView.frame)) shouldNot] equal:theValue(0)];
                     [[theValue(CGRectGetWidth(containerView.frame)) should] equal:theValue(CGRectGetWidth(contentView.frame))];
                     [[theValue(CGRectGetHeight(containerView.frame)) should] equal:theValue(CGRectGetHeight(contentView.frame))];
+                });
+            });
+            
+            context(@"intrinsicContentSize", ^{
+                it(@"should equal content size", ^{
+                    [[theValue([containerView intrinsicContentSize]) should] equal:theValue(contentView.frame.size)];
                 });
             });
         });

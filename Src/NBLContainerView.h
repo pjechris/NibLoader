@@ -14,7 +14,7 @@
  *
  * ContainerView work only with AutoLayout allowing it to:
  * - adapt content view to the container dimensions when container has size constraints
- * - (TODO) adapt container when content view has size constraints
+ * - adapt container when content view has size constraints
  *
  * Despite its inheritance from UIView ContainerView can have **ONLY 1 subview**: the content view
  */
