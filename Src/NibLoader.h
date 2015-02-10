@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NibLoader : NSObject
-
-@end
+#import "NBLContainerView.h"
+#import "UIView+NibLoader.h"
