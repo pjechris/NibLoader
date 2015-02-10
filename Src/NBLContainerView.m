@@ -7,7 +7,6 @@
 //
 
 #import "NBLContainerView.h"
-#import "UIView+NibLoader.h"
 
 @interface NBLContainerView ()
 @property(nonatomic, strong)IBInspectable NSString    *contentNib;
@@ -15,11 +14,36 @@
 
 @implementation NBLContainerView
 
+- (NSCache *)nibCache {
+    static NSCache *nibCache = nil;
+
+    if (!nibCache) {
+        nibCache = [NSCache new];
+        nibCache.countLimit = 15; // Arbitrary value, but around 15 cached nib at a time should be sufficient
+    }
+
+    return nibCache;
+}
+
+- (UINib *)nibWithName:(NSString *)nibName {
+    NSCache *nibCache = [self nibCache];
+    UINib *nib = [nibCache objectForKey:nibName];
+
+    if (!nib) {
+        nib = [UINib nibWithNibName:nibName bundle:nil];
+        [nibCache setObject:nib forKey:nibName];
+    }
+
+    return nib;
+}
+
 - (void)setContentNib:(NSString *)contentNib {
     if (contentNib == _contentNib) {
-        _contentNib = contentNib;
-        self.contentView = [[UINib nibWithNibName:contentNib bundle:nil] instantiateWithOwner:nil options:nil][0];
+        return;
     }
+
+    _contentNib = contentNib;
+    self.contentView = [[self nibWithName:contentNib] instantiateWithOwner:nil options:nil][0];
 }
 
 - (void)setContentView:(UIView *)contentView {
