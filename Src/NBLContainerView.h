@@ -20,7 +20,8 @@
  */
 @interface NBLContainerView : UIView
 
-@property(nonatomic, weak)UIView  *contentView;
+@property(nonatomic, strong, readonly)IBInspectable NSString    *contentNib;
+@property(nonatomic, weak)UIView                                *contentView;
 
 /**
  * Any call to this method set the view as the content view

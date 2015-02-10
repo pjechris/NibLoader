@@ -7,8 +7,20 @@
 //
 
 #import "NBLContainerView.h"
+#import "UIView+NibLoader.h"
+
+@interface NBLContainerView ()
+@property(nonatomic, strong)IBInspectable NSString    *contentNib;
+@end
 
 @implementation NBLContainerView
+
+- (void)setContentNib:(NSString *)contentNib {
+    if (contentNib == _contentNib) {
+        _contentNib = contentNib;
+        self.contentView = [[UINib nibWithNibName:contentNib bundle:nil] instantiateWithOwner:nil options:nil][0];
+    }
+}
 
 - (void)setContentView:(UIView *)contentView {
     NSDictionary *viewsDictionary = contentView ? NSDictionaryOfVariableBindings(contentView) : nil;
